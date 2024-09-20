@@ -8,9 +8,17 @@ class AppButton extends StatelessWidget {
   double? width;
   final double? txtsize;
   double? radius;
+
+  final Color? bgcolor;
+  final Color? textcolor;
+  final Color? borderallcolor;
+
   AppButton(
       {super.key,
       this.txtsize,
+      this.textcolor,
+      this.bgcolor,
+      this.borderallcolor,
       required this.text,
       required this.ontap,
       this.radius,
@@ -27,16 +35,20 @@ class AppButton extends StatelessWidget {
         height: height * 0.07,
         width: width * 0.8,
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(radius ?? width * 0.005),
-          color: AppColors.onPrimary,
-        ),
+            borderRadius: BorderRadius.circular(radius ?? width * 0.005),
+            color: bgcolor ?? AppColors.onPrimary,
+            border: Border.all(
+              width: width * 0.001,
+              color: borderallcolor ?? Colors.transparent,
+            )),
         child: Center(
           child: Text(
             text,
             style: TextStyle(
-                fontSize: txtsize ?? width * 0.015,
-                fontWeight: FontWeight.w300,
-                color: AppColors.appWhite),
+              fontSize: txtsize ?? width * 0.015,
+              fontWeight: FontWeight.w300,
+              color: textcolor ?? AppColors.appWhite,
+            ),
           ),
         ),
       ),

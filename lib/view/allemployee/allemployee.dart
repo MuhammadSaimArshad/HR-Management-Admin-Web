@@ -1,10 +1,9 @@
-
 import 'package:flutter/material.dart';
 import 'package:hr_management_admin/common_widgets/custom_textform.dart';
 import 'package:hr_management_admin/responsive/responsive.dart';
 import 'package:hr_management_admin/uttils/colors.dart';
 
-
+import 'package:hr_management_admin/view/allemployee/employeesidebar/employeesidebar.dart';
 
 class AllEmployee extends StatefulWidget {
   const AllEmployee({super.key});
@@ -196,30 +195,40 @@ class _AllEmployeeState extends State<AllEmployee> {
                                         SizedBox(
                                           width: width * 0.3,
                                         ),
-                                        Container(
-                                          height: height * 0.06,
-                                          width: width * 0.13,
-                                          decoration: BoxDecoration(
-                                              color: AppColors.onPrimary,
-                                              borderRadius:
-                                                  BorderRadius.circular(
-                                                      width * 0.005)),
-                                          child: Row(
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.center,
-                                            children: [
-                                              const Icon(
-                                                Icons.add_circle_outline,
-                                                color: AppColors.appWhite,
-                                              ),
-                                              // Image.asset("images/filter.png"),
-                                              Text("Add New Employee",
-                                                  style: TextStyle(
-                                                    fontSize: width * 0.01,
-                                                    fontWeight: FontWeight.w300,
-                                                    color: AppColors.appWhite,
-                                                  )),
-                                            ],
+                                        InkWell(
+                                          onTap: () {
+                                            Navigator.push(
+                                                context,
+                                                MaterialPageRoute(
+                                                    builder: (context) =>
+                                                        EmployeeSideBar()));
+                                          },
+                                          child: Container(
+                                            height: height * 0.06,
+                                            width: width * 0.13,
+                                            decoration: BoxDecoration(
+                                                color: AppColors.onPrimary,
+                                                borderRadius:
+                                                    BorderRadius.circular(
+                                                        width * 0.005)),
+                                            child: Row(
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.center,
+                                              children: [
+                                                const Icon(
+                                                  Icons.add_circle_outline,
+                                                  color: AppColors.appWhite,
+                                                ),
+                                                // Image.asset("images/filter.png"),
+                                                Text("Add New Employee",
+                                                    style: TextStyle(
+                                                      fontSize: width * 0.01,
+                                                      fontWeight:
+                                                          FontWeight.w300,
+                                                      color: AppColors.appWhite,
+                                                    )),
+                                              ],
+                                            ),
                                           ),
                                         ),
                                         SizedBox(

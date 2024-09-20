@@ -38,6 +38,7 @@ dependencies:
   google_fonts: 
   table_calendar:
   charts_flutter: 
+  dotted_border:  
 
 
 dev_dependencies:

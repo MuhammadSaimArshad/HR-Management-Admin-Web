@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hr_management_admin/responsive/responsive.dart';
-import 'package:hr_management_admin/view/allemployee/add_new_employee.dart';
-import 'package:hr_management_admin/view/allemployee/allemployee.dart';
+
+import 'package:hr_management_admin/view/login/login.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,9 +19,9 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: const ResponsiveWidget(
-        largeScreen: AddNewEmployee(),
-        mediumScreen: AddNewEmployee(),
-        smallScreen: AddNewEmployee(),
+        largeScreen: Login(),
+        mediumScreen: Login(),
+        smallScreen: Login(),
       ),
     );
   }

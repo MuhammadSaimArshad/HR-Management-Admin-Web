@@ -3,7 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:hr_management_admin/common_widgets/custom_textform.dart';
 import 'package:hr_management_admin/responsive/responsive.dart';
 import 'package:hr_management_admin/uttils/colors.dart';
-import 'package:hr_management_admin/view/allemployee/personal_information.dart';
+
+import 'package:hr_management_admin/view/allemployee/add_new_employee/document.dart';
+import 'package:hr_management_admin/view/allemployee/add_new_employee/personal_information.dart';
+import 'package:hr_management_admin/view/allemployee/add_new_employee/professional_information.dart';
+
+import 'add_new_employee/account_access.dart';
 
 class AddNewEmployee extends StatefulWidget {
   const AddNewEmployee({super.key});
@@ -19,6 +24,9 @@ class _AddNewEmployeeState extends State<AddNewEmployee> {
   int _buttonIndex = 0;
   final _scheduleWidgets = [
     PersonalInformation(),
+    ProfessionalInformation(),
+    Document(),
+    AccountAcess()
   ];
 
   @override
@@ -39,7 +47,6 @@ class _AddNewEmployeeState extends State<AddNewEmployee> {
               width: width,
               child: Row(
                 children: [
-                  Expanded(child: Column()),
                   Flexible(
                       flex: 4,
                       child: Container(
@@ -64,13 +71,13 @@ class _AddNewEmployeeState extends State<AddNewEmployee> {
                                         crossAxisAlignment:
                                             CrossAxisAlignment.start,
                                         children: [
-                                          Text("All Employee",
+                                          Text("Add New Employee",
                                               style: TextStyle(
                                                 fontSize: width * 0.015,
                                                 fontWeight: FontWeight.w600,
                                               )),
                                           Text(
-                                            "All Employee information",
+                                            "All Employee Add New Employee",
                                             style: TextStyle(
                                                 fontSize: width * 0.01,
                                                 fontWeight: FontWeight.w300,
@@ -79,7 +86,7 @@ class _AddNewEmployeeState extends State<AddNewEmployee> {
                                         ],
                                       ),
                                       SizedBox(
-                                        width: width * 0.3,
+                                        width: width * 0.26,
                                       ),
                                       SizedBox(
                                         height: height * 0.07,
@@ -312,52 +319,63 @@ class _AddNewEmployeeState extends State<AddNewEmployee> {
                                         ),
                                       ],
                                     ),
-                                    Row(
-                                      children: [
-                                        SizedBox(
-                                          width: width * 0.05,
-                                        ),
-                                        Container(
-                                            height: height * 0.005,
-                                            width: width * 0.14,
-                                            color: _buttonIndex == 0
-                                                ? AppColors.onPrimary
-                                                : Colors.transparent),
-                                        SizedBox(
-                                          width: width * 0.06,
-                                        ),
-                                        Container(
-                                            height: height * 0.005,
-                                            width: width * 0.16,
-                                            color: _buttonIndex == 1
-                                                ? AppColors.onPrimary
-                                                : Colors.transparent),
-                                        SizedBox(
-                                          width: width * 0.05,
-                                        ),
-                                        Container(
-                                            height: height * 0.005,
-                                            width: width * 0.09,
-                                            color: _buttonIndex == 2
-                                                ? AppColors.onPrimary
-                                                : Colors.transparent),
-                                        SizedBox(
-                                          width: width * 0.05,
-                                        ),
-                                        Container(
-                                            height: height * 0.005,
-                                            width: width * 0.11,
-                                            color: _buttonIndex == 3
-                                                ? AppColors.onPrimary
-                                                : Colors.transparent)
-                                      ],
+                                    SizedBox(
+                                      height: height * 0.01,
+                                    ),
+                                    Container(
+                                      height: height * 0.005,
+                                      width: width * 0.66,
+                                      color: AppColors.appGrey,
+                                      child: Row(
+                                        children: [
+                                          SizedBox(
+                                            width: width * 0.01,
+                                          ),
+                                          Container(
+                                              height: height * 0.005,
+                                              width: width * 0.14,
+                                              color: _buttonIndex == 0
+                                                  ? AppColors.onPrimary
+                                                  : Colors.transparent),
+                                          SizedBox(
+                                            width: width * 0.05,
+                                          ),
+                                          Container(
+                                              height: height * 0.005,
+                                              width: width * 0.16,
+                                              color: _buttonIndex == 1
+                                                  ? AppColors.onPrimary
+                                                  : Colors.transparent),
+                                          SizedBox(
+                                            width: width * 0.05,
+                                          ),
+                                          Container(
+                                              height: height * 0.005,
+                                              width: width * 0.09,
+                                              color: _buttonIndex == 2
+                                                  ? AppColors.onPrimary
+                                                  : Colors.transparent),
+                                          SizedBox(
+                                            width: width * 0.05,
+                                          ),
+                                          Container(
+                                              height: height * 0.005,
+                                              width: width * 0.11,
+                                              color: _buttonIndex == 3
+                                                  ? AppColors.onPrimary
+                                                  : Colors.transparent)
+                                        ],
+                                      ),
                                     ),
                                     SizedBox(
-                                        width: width * 0.65,
-                                        child: const Divider(
-                                          color: AppColors.appGrey,
-                                        )),
-                                    _scheduleWidgets[_buttonIndex],
+                                      height: height * 0.01,
+                                    ),
+                                    Flexible(
+                                        flex: 1,
+                                        child: Container(
+                                          color: Colors.white,
+                                          child: _scheduleWidgets[_buttonIndex],
+                                        ))
                                   ],
                                 ),
                               ),
