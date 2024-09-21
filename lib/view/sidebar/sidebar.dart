@@ -4,9 +4,13 @@ import 'package:hr_management_admin/responsive/responsive.dart';
 import 'package:hr_management_admin/uttils/colors.dart';
 import 'package:hr_management_admin/view/alldepartment/alldepartment.dart';
 import 'package:hr_management_admin/view/allemployee/allemployee.dart';
+import 'package:hr_management_admin/view/candidates/candidates.dart';
 import 'package:hr_management_admin/view/dashborad/dashborad.dart';
-
+import 'package:hr_management_admin/view/holiday/holiday.dart';
+import 'package:hr_management_admin/view/leaves/leaves.dart';
+import 'package:hr_management_admin/view/setting/setting.dart';
 import '../attentdance/attendance.dart';
+import '../jobs/jobs.dart';
 import '../payrol/payroll.dart';
 
 class SideBar extends StatefulWidget {
@@ -26,6 +30,11 @@ class _SideBarState extends State<SideBar> {
     const AllDepartment(),
     const Attendance(),
     const PayRoll(),
+    const Jobs(),
+    const Candidates(),
+    const Leaves(),
+    const Holiday(),
+    const Setting(),
   ];
 
   @override
