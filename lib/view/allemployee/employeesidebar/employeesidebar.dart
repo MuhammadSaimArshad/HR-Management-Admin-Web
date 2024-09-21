@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hr_management_admin/responsive/responsive.dart';
 import 'package:hr_management_admin/uttils/colors.dart';
+import 'package:hr_management_admin/view/alldepartment/view_department.dart';
 import 'package:hr_management_admin/view/allemployee/add_new_employee.dart';
 
 import 'package:hr_management_admin/view/allemployee/view_employee_detail.dart';
@@ -20,6 +21,7 @@ class _EmployeeSideBarState extends State<EmployeeSideBar> {
   final _scheduleWidgets = [
     const AddNewEmployee(),
     ViewEmployeeDetailProfile(),
+    ViewDepartment(),
   ];
 
   @override
@@ -161,7 +163,7 @@ class _EmployeeSideBarState extends State<EmployeeSideBar> {
                                   SizedBox(
                                     width: width * 0.01,
                                   ),
-                                  Icon(CupertinoIcons.person_3,
+                                  Icon(CupertinoIcons.person,
                                       color: _buttonIndex == 1
                                           ? AppColors.onPrimary
                                           : AppColors.appBlack),
@@ -169,7 +171,7 @@ class _EmployeeSideBarState extends State<EmployeeSideBar> {
                                     width: width * 0.01,
                                   ),
                                   Text(
-                                    "All Employees",
+                                    "Employees Detail",
                                     style: TextStyle(
                                       fontSize: width * 0.012,
                                       fontWeight: FontWeight.w500,
@@ -223,7 +225,7 @@ class _EmployeeSideBarState extends State<EmployeeSideBar> {
                                     width: width * 0.01,
                                   ),
                                   Text(
-                                    "All Departments",
+                                    "View Departments",
                                     style: TextStyle(
                                       fontSize: width * 0.012,
                                       fontWeight: FontWeight.w500,

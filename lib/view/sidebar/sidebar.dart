@@ -2,8 +2,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hr_management_admin/responsive/responsive.dart';
 import 'package:hr_management_admin/uttils/colors.dart';
+import 'package:hr_management_admin/view/alldepartment/alldepartment.dart';
 import 'package:hr_management_admin/view/allemployee/allemployee.dart';
 import 'package:hr_management_admin/view/dashborad/dashborad.dart';
+
+import '../attentdance/attendance.dart';
+import '../payrol/payroll.dart';
 
 class SideBar extends StatefulWidget {
   const SideBar({super.key});
@@ -19,6 +23,9 @@ class _SideBarState extends State<SideBar> {
   final _scheduleWidgets = [
     const Dashborad(),
     const AllEmployee(),
+    const AllDepartment(),
+    const Attendance(),
+    const PayRoll(),
   ];
 
   @override

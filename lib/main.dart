@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:hr_management_admin/responsive/responsive.dart';
+import 'package:hr_management_admin/view/attentdance/attendance.dart';
 
 import 'package:hr_management_admin/view/login/login.dart';
+import 'package:hr_management_admin/view/payrol/payroll.dart';
+
+import 'view/alldepartment/alldepartment.dart';
 
 void main() {
   runApp(const MyApp());
