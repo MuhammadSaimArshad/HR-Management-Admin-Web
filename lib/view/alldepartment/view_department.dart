@@ -74,7 +74,7 @@ class _ViewDepartmentState extends State<ViewDepartment> {
                                         ],
                                       ),
                                       SizedBox(
-                                        width: width * 0.3,
+                                        width: width * 0.28,
                                       ),
                                       SizedBox(
                                         height: height * 0.07,
@@ -178,7 +178,7 @@ class _ViewDepartmentState extends State<ViewDepartment> {
                                     Row(
                                       children: [
                                         SizedBox(
-                                          width: width * 0.01,
+                                          width: width * 0.02,
                                         ),
                                         SizedBox(
                                           height: height * 0.06,
@@ -213,7 +213,7 @@ class _ViewDepartmentState extends State<ViewDepartment> {
                                                         width * 0.005)),
                                             child: Row(
                                               mainAxisAlignment:
-                                                  MainAxisAlignment.center,
+                                                  MainAxisAlignment.spaceEvenly,
                                               children: [
                                                 const Icon(
                                                   Icons.add_circle_outline,
@@ -247,10 +247,9 @@ class _ViewDepartmentState extends State<ViewDepartment> {
                                                       width * 0.005)),
                                           child: Row(
                                             mainAxisAlignment:
-                                                MainAxisAlignment.center,
+                                                MainAxisAlignment.spaceEvenly,
                                             children: [
                                               Icon(Icons.filter_3),
-                                              // Image.asset("images/filter.png"),
                                               Text("Filter",
                                                   style: TextStyle(
                                                     fontSize: width * 0.01,

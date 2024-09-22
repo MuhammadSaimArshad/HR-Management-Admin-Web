@@ -73,7 +73,7 @@ class _SettingState extends State<Setting> {
                                         ],
                                       ),
                                       SizedBox(
-                                        width: width * 0.3,
+                                        width: width * 0.31,
                                       ),
                                       SizedBox(
                                         height: height * 0.07,

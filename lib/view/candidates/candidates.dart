@@ -72,7 +72,7 @@ class _CandidatesState extends State<Candidates> {
                                         ],
                                       ),
                                       SizedBox(
-                                        width: width * 0.3,
+                                        width: width * 0.28,
                                       ),
                                       SizedBox(
                                         height: height * 0.07,
@@ -1004,8 +1004,14 @@ class _CandidatesState extends State<Candidates> {
                                                     fontSize: width * 0.01,
                                                     fontWeight: FontWeight.w300,
                                                   )),
-                                              const Icon(Icons
-                                                  .keyboard_arrow_down_outlined),
+                                              SizedBox(
+                                                width: width * 0.01,
+                                              ),
+                                              Icon(
+                                                Icons
+                                                    .keyboard_arrow_down_outlined,
+                                                size: width * 0.015,
+                                              ),
                                             ],
                                           ),
                                         ),

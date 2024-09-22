@@ -177,7 +177,7 @@ class _HolidayState extends State<Holiday> {
                                     Row(
                                       children: [
                                         SizedBox(
-                                          width: width * 0.01,
+                                          width: width * 0.02,
                                         ),
                                         SizedBox(
                                           height: height * 0.06,
@@ -192,7 +192,7 @@ class _HolidayState extends State<Holiday> {
                                           ),
                                         ),
                                         SizedBox(
-                                          width: width * 0.37,
+                                          width: width * 0.4,
                                         ),
                                         InkWell(
                                           onTap: () {
@@ -201,7 +201,7 @@ class _HolidayState extends State<Holiday> {
                                           },
                                           child: Container(
                                             height: height * 0.06,
-                                            width: width * 0.1,
+                                            width: width * 0.11,
                                             decoration: BoxDecoration(
                                                 color: AppColors.onPrimary,
                                                 borderRadius:
@@ -723,7 +723,7 @@ Future<void> _showMyDialog(
               child: AppTextField(
                 hint: "Holiday Name",
                 controller: deparmentcontroller,
-                borderColor: AppColors.appBlack,
+                borderColor: Colors.grey,
                 focusBorderColor: AppColors.appGrey,
                 borderRadius: 8,
               ),
@@ -737,7 +737,7 @@ Future<void> _showMyDialog(
               child: AppTextField(
                 hint: "Select Day",
                 controller: deparmentcontroller,
-                borderColor: AppColors.appBlack,
+                borderColor: Colors.grey,
                 focusBorderColor: AppColors.appGrey,
                 borderRadius: 8,
                 suffix: Icon(Icons.date_range),

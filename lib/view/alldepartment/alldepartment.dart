@@ -74,7 +74,7 @@ class _AllDepartmentState extends State<AllDepartment> {
                                         ],
                                       ),
                                       SizedBox(
-                                        width: width * 0.28,
+                                        width: width * 0.27,
                                       ),
                                       SizedBox(
                                         height: height * 0.07,
@@ -179,7 +179,7 @@ class _AllDepartmentState extends State<AllDepartment> {
                                       Row(
                                         children: [
                                           SizedBox(
-                                            width: width * 0.01,
+                                            width: width * 0.02,
                                           ),
                                           SizedBox(
                                             height: height * 0.06,

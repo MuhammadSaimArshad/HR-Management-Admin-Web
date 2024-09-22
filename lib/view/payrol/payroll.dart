@@ -202,7 +202,7 @@ class _PayRollState extends State<PayRoll> {
                                             //             EmployeeSideBar()));
                                           },
                                           child: Container(
-                                            height: height * 0.06,
+                                            height: height * 0.055,
                                             width: width * 0.06,
                                             decoration: BoxDecoration(
                                                 color: AppColors.onPrimary,
@@ -217,6 +217,7 @@ class _PayRollState extends State<PayRoll> {
                                                   Icons
                                                       .arrow_circle_up_outlined,
                                                   color: AppColors.appWhite,
+                                                  size: width * 0.02,
                                                 ),
                                                 // Image.asset("images/filter.png"),
                                                 Text("Export",

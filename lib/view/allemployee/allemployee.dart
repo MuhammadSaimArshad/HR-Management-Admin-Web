@@ -74,7 +74,7 @@ class _AllEmployeeState extends State<AllEmployee> {
                                         ],
                                       ),
                                       SizedBox(
-                                        width: width * 0.3,
+                                        width: width * 0.28,
                                       ),
                                       SizedBox(
                                         height: height * 0.07,
@@ -103,7 +103,7 @@ class _AllEmployeeState extends State<AllEmployee> {
                                         ),
                                       ),
                                       SizedBox(
-                                        width: width * 0.005,
+                                        width: width * 0.003,
                                       ),
                                       Container(
                                         height: height * 0.07,
@@ -213,13 +213,12 @@ class _AllEmployeeState extends State<AllEmployee> {
                                                         width * 0.005)),
                                             child: Row(
                                               mainAxisAlignment:
-                                                  MainAxisAlignment.center,
+                                                  MainAxisAlignment.spaceEvenly,
                                               children: [
                                                 const Icon(
                                                   Icons.add_circle_outline,
                                                   color: AppColors.appWhite,
                                                 ),
-                                                // Image.asset("images/filter.png"),
                                                 Text("Add New Employee",
                                                     style: TextStyle(
                                                       fontSize: width * 0.01,
@@ -247,10 +246,9 @@ class _AllEmployeeState extends State<AllEmployee> {
                                                       width * 0.005)),
                                           child: Row(
                                             mainAxisAlignment:
-                                                MainAxisAlignment.center,
+                                                MainAxisAlignment.spaceEvenly,
                                             children: [
                                               Icon(Icons.filter_3),
-                                              // Image.asset("images/filter.png"),
                                               Text("Filter",
                                                   style: TextStyle(
                                                     fontSize: width * 0.01,
@@ -530,8 +528,8 @@ class _AllEmployeeState extends State<AllEmployee> {
                                           height: height * 0.03,
                                           width: width * 0.05,
                                           decoration: BoxDecoration(
-                                              color: const Color.fromRGBO(
-                                                  203, 195, 233, 1),
+                                              color: const Color.fromARGB(
+                                                  255, 209, 203, 233),
                                               borderRadius:
                                                   BorderRadius.circular(
                                                       width * 0.003)),
@@ -1074,8 +1072,14 @@ class _AllEmployeeState extends State<AllEmployee> {
                                                     fontSize: width * 0.01,
                                                     fontWeight: FontWeight.w300,
                                                   )),
-                                              const Icon(Icons
-                                                  .keyboard_arrow_down_outlined),
+                                              SizedBox(
+                                                width: width * 0.01,
+                                              ),
+                                              Icon(
+                                                Icons
+                                                    .keyboard_arrow_down_outlined,
+                                                size: width * 0.015,
+                                              ),
                                             ],
                                           ),
                                         ),

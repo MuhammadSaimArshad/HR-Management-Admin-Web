@@ -86,7 +86,7 @@ class _AddNewEmployeeState extends State<AddNewEmployee> {
                                         ],
                                       ),
                                       SizedBox(
-                                        width: width * 0.26,
+                                        width: width * 0.24,
                                       ),
                                       SizedBox(
                                         height: height * 0.07,

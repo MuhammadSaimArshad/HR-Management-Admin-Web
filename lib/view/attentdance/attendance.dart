@@ -72,7 +72,7 @@ class _AttendanceState extends State<Attendance> {
                                         ],
                                       ),
                                       SizedBox(
-                                        width: width * 0.3,
+                                        width: width * 0.28,
                                       ),
                                       SizedBox(
                                         height: height * 0.07,
@@ -176,7 +176,7 @@ class _AttendanceState extends State<Attendance> {
                                     Row(
                                       children: [
                                         SizedBox(
-                                          width: width * 0.01,
+                                          width: width * 0.02,
                                         ),
                                         SizedBox(
                                           height: height * 0.06,
@@ -871,8 +871,14 @@ class _AttendanceState extends State<Attendance> {
                                                     fontSize: width * 0.01,
                                                     fontWeight: FontWeight.w300,
                                                   )),
-                                              const Icon(Icons
-                                                  .keyboard_arrow_down_outlined),
+                                              SizedBox(
+                                                width: width * 0.01,
+                                              ),
+                                              Icon(
+                                                Icons
+                                                    .keyboard_arrow_down_outlined,
+                                                size: width * 0.015,
+                                              ),
                                             ],
                                           ),
                                         ),

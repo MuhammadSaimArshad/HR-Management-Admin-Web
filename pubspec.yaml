@@ -39,6 +39,7 @@ dependencies:
   table_calendar:
   charts_flutter: 
   dotted_border:  
+  get:
 
 
 dev_dependencies:

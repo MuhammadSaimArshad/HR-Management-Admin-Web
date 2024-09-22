@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:hr_management_admin/responsive/responsive.dart';
 import 'package:hr_management_admin/uttils/colors.dart';
 import 'package:hr_management_admin/view/alldepartment/alldepartment.dart';
@@ -638,7 +639,9 @@ class _SideBarState extends State<SideBar> {
                                 width: width * 0.03,
                               ),
                               InkWell(
-                                onTap: () {},
+                                onTap: () {
+                                  Get.changeTheme(ThemeData.light());
+                                },
                                 child: Container(
                                   height: height * 0.05,
                                   width: width * 0.05,
@@ -650,9 +653,10 @@ class _SideBarState extends State<SideBar> {
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceEvenly,
                                     children: [
-                                      const Icon(
+                                      Icon(
                                         Icons.light_mode,
                                         color: AppColors.appWhite,
+                                        size: width * 0.015,
                                       ),
                                       Text("Light",
                                           style: TextStyle(
@@ -668,7 +672,9 @@ class _SideBarState extends State<SideBar> {
                                 width: width * 0.01,
                               ),
                               InkWell(
-                                onTap: () {},
+                                onTap: () {
+                                  Get.changeTheme(ThemeData.dark());
+                                },
                                 child: Container(
                                   height: height * 0.05,
                                   width: width * 0.05,
@@ -680,9 +686,10 @@ class _SideBarState extends State<SideBar> {
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceEvenly,
                                     children: [
-                                      const Icon(
+                                      Icon(
                                         Icons.dark_mode_outlined,
                                         color: AppColors.appBlack,
+                                        size: width * 0.015,
                                       ),
                                       Text("Dark",
                                           style: TextStyle(

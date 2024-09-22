@@ -175,11 +175,11 @@ Future<void> _showMyDialog(
             ),
             SizedBox(
               height: height * 0.06,
-              width: width * 0.16,
+              width: width * 0.2,
               child: AppTextField(
                 hint: "Search",
                 controller: namecontroller,
-                borderColor: AppColors.appBlack,
+                borderColor: Colors.grey,
                 focusBorderColor: AppColors.appGrey,
                 borderRadius: 8,
                 prefixIcon: Icon(Icons.search),

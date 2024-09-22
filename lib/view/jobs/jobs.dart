@@ -74,7 +74,7 @@ class _JobsState extends State<Jobs> {
                                         ],
                                       ),
                                       SizedBox(
-                                        width: width * 0.28,
+                                        width: width * 0.33,
                                       ),
                                       SizedBox(
                                         height: height * 0.07,

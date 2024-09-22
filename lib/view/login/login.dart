@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
 import 'package:hr_management_admin/common_widgets/button.dart';
 import 'package:hr_management_admin/common_widgets/custom_textform.dart';
 import 'package:hr_management_admin/responsive/responsive.dart';
@@ -126,7 +128,7 @@ class _LoginState extends State<Login> {
                             height: height * 0.07,
                             width: width * 0.32,
                             child: AppTextField(
-                              hint: "Enter Email",
+                              hint: "Email Address",
                               controller: emailcontroller,
                               borderColor: AppColors.onPrimary,
                               focusBorderColor: AppColors.onPrimary,
@@ -153,9 +155,7 @@ class _LoginState extends State<Login> {
                               controller: passwordcontroller,
                               borderColor: AppColors.onPrimary,
                               focusBorderColor: AppColors.onPrimary,
-                              suffix: const Icon(
-                                Icons.remove_red_eye_sharp,
-                              ),
+                              suffix: const Icon(CupertinoIcons.eye_slash_fill),
                               validator: (String? v) {
                                 if (v!.isEmpty) {
                                   return 'Please enter your password';
@@ -228,7 +228,7 @@ class _LoginState extends State<Login> {
                                         builder: (context) => SideBar()));
                               },
                             ),
-                          )
+                          ),
                         ],
                       ),
                     ),

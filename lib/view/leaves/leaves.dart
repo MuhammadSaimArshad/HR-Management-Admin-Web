@@ -171,12 +171,12 @@ class _LeavesState extends State<Leaves> {
                                 child: Column(
                                   children: [
                                     SizedBox(
-                                      height: height * 0.03,
+                                      height: height * 0.04,
                                     ),
                                     Row(
                                       children: [
                                         SizedBox(
-                                          width: width * 0.01,
+                                          width: width * 0.02,
                                         ),
                                         SizedBox(
                                           height: height * 0.06,
@@ -899,8 +899,14 @@ class _LeavesState extends State<Leaves> {
                                                     fontSize: width * 0.01,
                                                     fontWeight: FontWeight.w300,
                                                   )),
-                                              const Icon(Icons
-                                                  .keyboard_arrow_down_outlined),
+                                              SizedBox(
+                                                width: width * 0.01,
+                                              ),
+                                              Icon(
+                                                Icons
+                                                    .keyboard_arrow_down_outlined,
+                                                size: width * 0.015,
+                                              ),
                                             ],
                                           ),
                                         ),
